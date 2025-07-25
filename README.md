@@ -70,10 +70,10 @@ A histogram was plotted to visualize how scores were distributed among wallets.
 - Integrate this score into a real-time risk prediction dashboard.
 
 
-##My Learnings
+## My Learnings
 -This was my first time working with DeFi and blockchain data, and honestly, I found it really interesting. I learned how to fetch wallet data using APIs, process it in Python, and give scores based on activity. I didn’t know much about crypto protocols before, but now I understand how they work and how risk scoring can help. I’m still learning, but I really enjoyed doing this task!
 
-📌 Note:
+## 📌 Note:
 In this version, we followed a positive scoring logic, where wallets with higher on-chain activity receive higher scores (closer to 1000), indicating they are more active and trustworthy.
 Wallets with low or no transaction history were assigned lower scores, as limited activity may reflect risk or inactivity.
 This aligns with real-world credit systems where higher scores = safer users. Most wallets in our dataset scored high, suggesting they are generally safe and reliable for DeFi use cases.
