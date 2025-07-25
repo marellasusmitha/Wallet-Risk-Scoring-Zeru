@@ -58,12 +58,6 @@ The final output is a CSV file with the following format:
 | ...                                        | ...    |
 
 
-##  Visualization
-
-A histogram was plotted to visualize how scores were distributed among wallets.
-<img width="772" height="603" alt="Screenshot 2025-07-25 204342" src="https://github.com/user-attachments/assets/a020a79f-8eef-49dc-8347-d1cf194b0517" />
-
-
 ##  Future Improvements
 - Include features like lending/borrowing behavior, liquidation history, and token balance trends.
 - Handle wallets with missing API data separately.
