@@ -1,29 +1,30 @@
-#  Wallet Risk Score Analysis
+# 📊 Wallet Risk Score Analysis – Stage 2 (Zeru AI Internship)
 
-##  Score Distribution Overview
+## Overview
 
-After applying the positive risk scoring logic, we plotted the distribution of scores for the 100 Ethereum wallets.
+As part of the wallet risk scoring task, I analyzed the behavior of 100 wallet addresses by fetching their transaction history on Compound V2/V3 using the Covalent API. The risk score was calculated based on the number of interactions each wallet had with the protocol.
 
-The results showed that:
+## Score Distribution
 
-- **Majority of wallets scored near 1000**, indicating they are **very active and trustworthy**.
-- This suggests that the dataset provided includes mostly well-used, safe wallets — possibly from real users in Compound's ecosystem.
+The histogram below shows the distribution of scores among the 100 wallets.
 
----
+<img width="798" height="650" alt="output" src="https://github.com/user-attachments/assets/e4fcd0f8-2605-46f9-9b80-e98d3e69d787" />
 
-##  Interpretation of Results
+- Most scores fall between **100 and 200**.
+- This range represents wallets with **low or no transaction activity**, which leads to **higher risk** based on the model logic.
 
-| Score Range | Meaning                     | Wallet Behavior                  |
-|-------------|-----------------------------|----------------------------------|
-| 0–100       | Extremely risky             | No on-chain activity             |
-| 100–400     | High risk                   | Very few transactions            |
-| 400–700     | Medium risk                 | Moderate usage                   |
-| 700–1000    | Low risk (safe)             | High DeFi activity, trustworthy  |
+## What This Means
 
-- Since most wallets scored **above 700**, we can conclude that the sample data mostly consists of **reliable, DeFi-native users**.
-- There were **no wallets with score 0**, which suggests all wallets had at least some valid history.
+- The output shows that many wallets had **limited interaction** with Compound V2/V3.
+- This is an important factor in DeFi scoring — because in decentralized systems, **user behavior is the only trust signal available**.
+- A wallet that hasn't borrowed, lent, or repaid much cannot be confidently marked as trustworthy.
 
-##  Score Distribution Visualization
-<img width="772" height="603" alt="Screenshot 2025-07-25 204342" src="https://github.com/user-attachments/assets/976733a4-1bca-44c8-86e4-aa7440221051" />
+## My Learning
 
-The histogram clearly shows a **skew toward the upper end** (near 1000), confirming that wallets are predominantly safe.
+From this task, I learned how risk modeling works in DeFi and how on-chain behavior reflects the user's trust level.  
+Even if most scores are on the lower side, it matches the logic: **less activity = more uncertainty = higher risk**.
+
+## Final Thoughts
+
+This was a very useful learning experience in combining blockchain data, API integration, feature engineering, and score modeling — all within a real-world DeFi use case.
+
